@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Resize with JavaScript</title>
+    <style>
+        #myImage {
+            transition: width 0.5s, height 0.5s; /* Smooth transition for size change */
+            width: 500px; /* Initial width */
+            height: 500px; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+
+<img id="myImage" src="lion.jpg" alt="Sample Image" onclick="resizeImage()">
+
+<script>
+// Function to resize the image
+function resizeImage() {
+    var img = document.getElementById('myImage');
+    // Check if the image is in its original size
+    if (img.style.width === '200px') {
+        // Enlarge the image
+        img.style.width = '400px'; // New width
+        img.style.height = 'auto'; // Adjust height to maintain aspect ratio
+    } else {
+        // Return the image to its original size
+        img.style.width = '200px'; // Original width
+        img.style.height = 'auto'; // Adjust height to maintain aspect ratio
+    }
+}
+</script>
+
+</body>
+</html>

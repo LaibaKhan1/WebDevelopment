@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #534c2b;
+        text-align: center;
+    }
+    
+    .gallery {
+        margin: 20px;
+    }
+    
+    .photo {
+        margin: 10px;
+        width: 150px;
+        height: auto;
+        transition: transform 0.3s ease;
+        display: inline-block;
+    }
+    
+    .gallery:hover .photo {
+        opacity: 0.6;
+    }
+    
+    .photo:hover {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>FLOWER GALLERY</h1>
+
+<div class="gallery">
+    <img class="photo" src="flower1.jpg" alt="Flower 1">
+    <img class="photo" src="flower2.jpg" alt="Flower 2">
+    <img class="photo" src="flower3.jpg" alt="Flower 3">
+    <img class="photo" src="flower4.jpg" alt="Flower 4">
+    <img class="photo" src="flower5.jpg" alt="Flower 5">
+</div>
+
+<script>$(document).ready(function() {
+    $('.photo').on({
+        mouseenter: function() {
+            $(this).animate({ 'width': '+=50px', 'height': '+=50px' });
+        },
+        mouseleave: function() {
+            $(this).animate({ 'width': '-=50px', 'height': '-=50px' });
+        }
+    });
+});
+</script>
+</body>
+</html>

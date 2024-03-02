@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urdu Poetry</title>
+    <style>body {
+        font-family: 'Noto Nastaliq Urdu', serif; /* Or any other Urdu compatible font */
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        color: #333;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+    }
+    nav ul li {
+        display: inline;
+        margin: 0 20px;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    main {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    section {
+        background: white;
+        padding: 10px;
+        border-radius: 5px;
+    }    
+    .poet {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 20px;
+    }
+    .poet img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    .poet p {
+        flex: 1;
+        margin: 0;
+        padding: 0 10px;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    @media screen and (max-width: 768px) {
+        nav ul li {
+            display: block;
+            margin: 10px 0;
+        }
+        .poet {
+            flex-direction: column;
+            align-items: center;
+        }
+        .poet p {
+            text-align: center;
+        }
+        main {
+            grid-template-columns: 1fr;
+        }
+    }
+    nav ul li a:hover {
+        color: #ff5722;
+        transition: color 0.3s ease-in-out;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#ghazals">Ghazals</a></li>
+                <li><a href="#poetry">Poetry</a></li>
+                <li><a href="#poets">Famous Poets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="ghazals">
+            <h2>Ghazals</h2>
+            <h5>Ghazal 1</h5>
+            <p>
+                gulon mein rang bhare, baad-e-naubahaar chale<br>
+                chale bhi aao ki gulshan kaa karobaar chale<br>
+                qaffas udaas hai yaro, sabaa se kuchh to kaho<br>
+                kahin to bahr-e-Khudaa aaj zikr-e-yaar chale<br><br>
+            
+                kabhi to subh tere kunj-e-lab se ho aagaaz<br>
+                kabhi to shab sar-e-kaakul se mushkabaar chale<br>
+                bada hai dard ka rishtaa, ye dil garib sahi<br>
+                tumhaare naam pe aayenge gam gusaar chale<br><br>
+            
+                jo ham pe guzari so guzari magar shab-e-hijraa<br>
+                hamaare ashk teri aaqabat sanwaar chale<br>
+                huzoor-e-yaar hui daftar-e-junoon ki talab<br>
+                girah mein leke garebaan kaa taar taar chale<br><br>
+            
+                maqaam 'Faiz' koii raah mein jachaa hii nahiin<br>
+                jo kuu-e-yaar se nikale to suu-e-daar chale
+            </p>
+            
+         
+             <h5>Ghazal 2</h5>
+             <p>
+                haalat-e-haal ke sabab haalat-e-haal hi gai<br>
+                shauq mein kuchh nahin gaya shauq ki zindagi gai<br><br>
+            
+                tera firaq jaan-e-jaan aish tha kya mere liye<br>
+                yani tere firaq mein KHub sharab pi gai<br><br>
+            
+                tere visal ke liye apne kamal ke liye<br>
+                haalat-e-dil ki thi KHarab aur KHarab ki gai<br><br>
+            
+                us ki umid-e-naz ka hum se ye man tha ki aap<br>
+                umr guzar dijiye umr guzar di gai<br><br>
+            
+                ek hi hadsa to hai aur wo ye ki aaj tak<br>
+                baat nahin kahi gai baat nahin suni gai<br><br>
+            
+                baad bhi tere jaan-e-jaan dil mein raha ajab saman<br>
+                yaad rahi teri yahan phir teri yaad bhi gai<br><br>
+            
+                us ke badan ko di numud hum ne suKHan mein aur phir<br>
+                us ke badan ke waste ek qaba bhi si gai<br><br>
+            
+                mina-ba-mina mai-ba-mai jam-ba-jam jam-ba-jam<br>
+                naf-piyale ki tere yaad ajab sahi gai<br><br>
+            
+                kahni hai mujh ko ek baat aap se yani aap se<br>
+                aap ke shahr-e-wasl mein lazzat-e-hijr bhi gai<br><br>
+            
+                sehn-e-KHayal-e-yar mein ki na basar shab-e-firaq<br>
+                jab se wo chandna gaya jab se wo chandni gai
+            </p>
+    
+            
+        </section>
+
+        <section id="Poetry">
+            <h2>Poetry</h2>
+            <p>kaun is ghar kī dekh-bhāl kare <br>
+                roz ik chiiz TuuT jaatī hai </p>
+
+            <p>'faiz' thī raah sar-ba-sar manzil <br>
+                ham jahāñ pahuñche kāmyāb aa.e </p>
+        </section>
+
+        <section id="poets">
+            <h2>Famous Poets</h2>
+            <div class="poet">
+                <img src="Faiz.jpeg" alt="Poet Name">
+                <p>Faiz Ahmad Faiz ( 13 February 1911 – 20 November 1984) NI, was an influential left-wing Urdu poet and intellectual from Pakistan.</p>
+            </div>
+        </section>
+        <section id="poets">
+            <h2>Famous Poets</h2>
+            <div class="poet">
+                <img src="jaun.jpg" alt="Poet Name">
+                <p>Syed Sibt-e-Asghar Naqvi,[1] commonly known by his pen-name Jaun Elia (Urdu: جون ایلیا, 14 December 1931 – 8 November 2002), was a Pakistani poet, philosopher, biographer, and scholar. </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Urdu Poetry Collection</p>
+    </footer>
+</body>
+</html>

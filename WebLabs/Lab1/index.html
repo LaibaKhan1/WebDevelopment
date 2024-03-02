@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Page</title>
+ <style>body {
+    font-family: Arial, sans-serif;
+    background-color: #feb3b3;
+    color: #333;
+    text-align: center;
+}
+h1 {
+    color: #cc00a3;
+}
+img {
+    width: 200px;
+    height: auto;
+    margin: 20px;
+}
+button {
+    background-color: #8dd18f;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+    <h1>Welcome to My Little World!</h1>
+    <p> You can find more quotes on  <a href="https://www.pinterest.com/">link</a>.</p>
+    <img src="image.jpg" alt="A descriptive image text">
+    <ul>
+        <li>Take the risk or lose the chance!</li>
+        <li>Dream Big, Dare to Fail!</li>
+        <li>The best is yet to come!</li>
+    </ul>
+    <button onclick="changeContent()">Click Me!</button>
+    <script> function changeContent() {
+        document.body.innerHTML += '<p>New content added!</p>';
+    }
+    </script>
+</body>
+</html>
